@@ -1,0 +1,35 @@
+internal/modules/cjs/loader.js:583
+    throw err;
+    ^
+
+Error: Cannot find module '/home/e0003962/web/Challenges10/MultiServerExpress.js'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:581:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:507:25)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:743:3)
+server listening on port 13962
+Got a connection on socket : [object Object]
+Message Received:  { path:
+   'M275, 146 L 275, 148 L 273, 152 L 267, 158 L 259, 170 L 251, 184 L 240, 196 L 229, 207 L 217, 215 L 205, 218 L 190, 221 L 182, 219 L 173, 210 L 167, 197 L 162, 180 L 159, 160 L 159, 142 L 161, 128 L 173, 117 L 187, 109 L 203, 106 L 220, 109 L 243, 124 L 252, 144 L 257, 165 L 260, 183 L 260, 198 L 260, 210 L 261, 214 L 261, 214 L 262, 215 L 262, 215 L 265, 215 L 267, 214 L 267, 214',
+  color: 'hsl(0,0,0)',
+  width: '17.25',
+  datatype: 'path' }
+server listening on port 13962
+Got a connection on socket : [object Object]
+Got a connection on socket : [object Object]
+Got a connection on socket : [object Object]
+Message Received:  { path: 'M82, 91 L 80, 92 L 79, 92 L 78, 92 L 78, 92',
+  color: 'hsl(0,0,0)',
+  width: '1',
+  datatype: 'path' }
+Got a connection on socket : [object Object]
+Message Received:  { path:
+   'M244, 90 L 241, 88 L 229, 87 L 217, 87 L 201, 96 L 179, 112 L 156, 134 L 146, 151 L 141, 169 L 140, 185 L 144, 199 L 156, 213 L 180, 223 L 228, 227 L 280, 223 L 316, 211 L 326, 205 L 327, 200 L 309, 191 L 271, 184 L 222, 180 L 178, 180 L 153, 181 L 145, 185 L 139, 192 L 137, 203 L 137, 209 L 138, 213 L 140, 216 L 141, 219 L 142, 220 L 142, 220 L 142, 220',
+  color: 'hsl(0,0,0)',
+  width: '20.2',
+  datatype: 'path' }
+Got a connection on socket : [object Object]
+Got a connection on socket : [object Object]
+Got a connection on socket : [object Object]
+Got a connection on socket : [object Object]

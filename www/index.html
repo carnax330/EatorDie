@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+        <!--  Include the raphael library from the jslibs directory  -->
+        <script src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="jslibs/raphael.js"></script>
+        <!-- <script type="text/javascript" src="jslibs/p5.js"></script> -->
+        <!--  Use the require.js module loader, and tell it where our main JavaScript file is  -->
+        <script defer type="text/javascript" src="appscripts/snakeV3.js"> </script>
+        <title>Eat or Die</title>
+    </head>
+
+  <body>
+    <div class="container">
+      <header class="header" style="text-align: center">
+        <div id="myHeader"> </div>
+      </header>
+
+      <nav class="sidebar" id="mySidebar" style="text-align: center">
+        <div id="sidebartext">
+        <p>Sidebar</p>
+      </div>
+        <input id="slider"  type= "range" step="0.01" min="1" max="2.5" value="1">
+      
+      </nav>
+
+      <article class="content" id="centerDiv">
+         <div id="svgcanvasDiv"> 
+            <div id="svgcanvas"> </div>  <!--  <article>   article  </article> -->
+        </div>
+      </article>
+
+      <!-- Ditto the previous note about <aside>. -->
+      <aside class="sidebar" id="myAside2" style="text-align: center">
+        <p style="text-decoration: underline;">
+          Scores
+        </p>
+        <div id="scores">
+        </div>
+        
+      </aside>
+      <aside class="sidebar" id="myAside" style="text-align: center">
+        <p>ASIDE</p>
+
+      </aside>
+
+
+      <footer class="footer" id="myFooter" style="text-align: center">
+        <p>footer</p>
+      </footer>
+
+      <aside class="sidebar" id="myAside3" style="text-align: center">
+        
+
+      </aside>
+
+    </div>
+</html>
+

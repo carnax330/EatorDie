@@ -1,0 +1,104 @@
+html, body {
+  height:98%;
+  width:98%;
+  background-color: #ccc;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Sections of Layout
+-------------------------------------- */
+/* Generic styles for demo purposes
+-------------------------------------- */
+.container {
+  font-family: Helvetica, Arial, sans-serif;
+  height:96%;
+  width:96%;
+}
+
+.container > * {
+  background-color: rgba(255,255,255, 0.5);
+  padding: 1em;
+}
+
+/* Typically, you wouldn't specify a height or min-height on this, instead allowing your actual content (i.e., text, images, etc.) to dictate the height of your content area. But since this example has very minimal content, I've set a min-height to mimic a taller content area. */
+.content {
+  /*
+  min-height: 40%; 
+  overflow-y: scroll;
+  */
+
+}
+
+/* Layout is stacked vertically by default (for narrower viewports), so give some breathing room between the sections. */
+/* Select all elements where parent is a container */
+.container > * {
+  margin-bottom: 2%;
+}
+
+/* Now let's apply grid for wider viewports. */
+@media screen and (min-width: 40em) {
+  .container > * {
+    margin-bottom: 0;
+  }
+  /* Define the grid */
+  .container {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-gap: 0.5% 0.5%;
+    grid-template-rows: 15% auto 20%;
+  }
+  /* Place items on the grid */
+  .header {
+    grid-column: 1 / span 3;
+
+  }
+  .sidebar {
+    grid-row-end: span 2;
+  }
+  .content {
+    grid-column: 2;
+    /*
+    width : 500;
+    height : 500;
+    */
+  }
+  .sidebar {
+    grid-row-end: span 1;
+  }
+
+}
+
+
+#player{
+  width:200px;
+}
+
+#svgcanvas {
+    display: block;
+    margin: auto;
+    /*border-style: solid;
+    border-width: 1px;
+    border-color: blue;*/
+    height: 500px;
+    width: 500px;
+}
+
+#sidebartext{
+
+}
+
+#myHeader {
+    display: block;
+    margin: auto;
+    /*border-style: solid;
+    border-width: 1px;
+    border-color: blue;*/
+    height: 100%;
+    width: 100%;
+}
+
+
+#scores {
+  font-size: 15px
+}
